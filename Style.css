@@ -1,4 +1,9 @@
+body{
+    overflow: hidden;
+}
+
 .grille {
+    margin: auto;
     width: 500px;
     height: 300px;
     display: grid;
@@ -7,3 +12,19 @@
     grid-column-gap: 10px;
     grid-row-gap: 10px;
     }
+
+footer{
+    position: absolute;
+    bottom: 0;
+    margin: auto;
+    margin-left: -10px;
+    padding: 10px;
+    width: 100%;
+    background-color: darkgray;
+    text-align: center;
+    
+}
+
+.pied{
+    
+}
