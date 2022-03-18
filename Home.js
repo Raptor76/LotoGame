@@ -10,8 +10,8 @@ for (let i = 1; i < 26; i++) {
     let btnCreate = document.createElement('input');
     btnCreate.setAttribute('type', 'button');
     btnCreate.setAttribute('value', i);
-    btnCreate.setAttribute('class', 'btn');
-    btnCreate.setAttribute('onclick', 'number(this.value)');
+    btnCreate.setAttribute('class', 'btn-number');
+    btnCreate.setAttribute('onclick', 'number(this)');
     document.getElementById('grille').appendChild(btnCreate);
 };
 
@@ -23,10 +23,12 @@ function number(val) {
 
     again.setAttribute('type','button');
     again.setAttribute('value','Rejouer');
+    again.setAttribute('class','rejouer');
     again.setAttribute('onclick','javascript:location.reload()');
 
-    choix.push(val);
+    choix.push(val.value);
     result.innerHTML += choix[choix.length - 1] + " ";
+    document.getElementById('grille').removeChild(val);
 
     if (choix.length == 6) {
         document.body.removeChild(grille);
