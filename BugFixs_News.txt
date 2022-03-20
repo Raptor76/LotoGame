@@ -1,6 +1,9 @@
-v.0.8.0 :
+v.0.8.0.
+-Version initial, mise en place des fonctionalités de base.
+-Ajout du CSS global.
+-Ajout du compteur de nombre en commun.
 
--Ajout du CSS global
--Ajout du footer
--Ne pas pouvoir selectionner plusieurs fois le même nombre
--Ajout du compteur de nombre en commun
+v.1.0.0.
+-Ajout du footer.
+-Ne pas pouvoir selectionner plusieurs fois le même nombre.
+-Le site est désormais adapté aux smartphones.
